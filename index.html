@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#000000"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" type="image/png"/>
+  <title>Tic Tac Toe ❌</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    #game {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      cursor: pointer;
+      border: 2px solid #ccc;
+    }
+    .cell:hover {
+      background-color: #e0e0e0;
+    }
+    .scoreboard {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe ❌</h1>
+  <div id="game"></div>
+  <div class="scoreboard">
+    <p>You: <span id="playerScore">0</span> | Computer: <span id="computerScore">0</span></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
